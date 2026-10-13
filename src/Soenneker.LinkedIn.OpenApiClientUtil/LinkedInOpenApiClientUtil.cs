@@ -25,7 +25,7 @@ public sealed class LinkedInOpenApiClientUtil : ILinkedInOpenApiClientUtil
         {
             HttpClient httpClient = await httpClientUtil.Get(token).NoSync();
 
-            var apiKey = configuration.GetValueStrict<string>("LinkedIn:AccessToken");
+            var apiKey = configuration.GetStringStrict("LinkedIn:AccessToken");
             string authHeaderName = configuration["LinkedIn:AuthHeaderName"] ?? "Authorization";
             string authHeaderValueTemplate = configuration["LinkedIn:AuthHeaderValueTemplate"] ?? "Bearer {token}";
             string authHeaderValue = authHeaderValueTemplate.Replace("{token}", apiKey, StringComparison.Ordinal);
