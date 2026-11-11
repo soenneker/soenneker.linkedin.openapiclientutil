@@ -47,7 +47,7 @@
 
     <ItemGroup>
         <PackageReference Include="Soenneker.Kiota.GenericAuthenticationProvider" Version="11.0.60" />
-        <PackageReference Include="Soenneker.LinkedIn.HttpClients" Version="11.0.39" />
-        <PackageReference Include="Soenneker.LinkedIn.OpenApiClient" Version="11.0.65" />
+        <PackageReference Include="Soenneker.LinkedIn.HttpClients" Version="11.0.40" />
+        <PackageReference Include="Soenneker.LinkedIn.OpenApiClient" Version="11.0.66" />
     </ItemGroup>
 </Project>
